@@ -237,7 +237,7 @@ def test_npartitions(db):
         "test",
         db,
         columns=list(df.columns),
-        bytes_per_chunk=2 ** 30,
+        bytes_per_chunk=2**30,
         index_col="number",
         head_rows=1,
     )
