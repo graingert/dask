@@ -76,6 +76,7 @@ jobs:
         run: source continuous_integration/scripts/run_tests.sh
 
       - name: Debug with tmate on failure
+        if: ${{ always() }}
         uses: mxschmitt/action-tmate@v3
 
       - name: Open or update issue on failure

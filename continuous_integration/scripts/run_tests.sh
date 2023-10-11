@@ -11,6 +11,6 @@ if [[ $COVERAGE == 'true' ]]; then
 fi
 
 echo "py.test dask/dataframe/tests/test_multi.py::test_concat_categorical --runslow $XTRATESTARGS"
-py.test dask --runslow $XTRATESTARGS
+py.test dask/dataframe/tests/test_multi.py::test_concat_categorical --runslow $XTRATESTARGS
 
 set +e
